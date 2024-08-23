@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DDDRefactor.DBContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -12,9 +13,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DDDRefactor.Migrations
 {
     [DbContext(typeof(SIZADBContext))]
-    partial class SIZADBContextModelSnapshot : ModelSnapshot
+    [Migration("20240823185459_PlohoPochinil-PochinilSnova")]
+    partial class PlohoPochinilPochinilSnova
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
